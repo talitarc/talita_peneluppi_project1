@@ -15,6 +15,14 @@ body {
     margin: 0 auto;
 }
 
+i {
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
 /* HEADER STYLES START HERE */
 
 
@@ -153,11 +161,30 @@ section .btn-default {
 
 section .title-article {
     font-size: 1.4rem;
-    apdding: 10px;
+    padding: 0;
+    margin: 15px auto;
 }
 
 section .text-article {
     margin: 0 30px;
+}
+
+/*FOOTER STYLES START HERE*/
+
+/*UL SHOP BRANDS, COMMUNITY AND EVENTS SECTION*/
+
+footer .user-interaction {
+    background-image: url(../images/image-5@3x.jpg);
+    background-size: cover;
+    height: 65vh;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+
+}
+
+footer i {
+    font-size: 2rem;
 }
 
 
