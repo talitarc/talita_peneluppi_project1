@@ -20,7 +20,7 @@ body {
 
 /*The header is 80vh because I want the user to see there's more content below*/
 header {
-    background-image: url(../images/image-1-mobile.jpg);
+    background-image: url(../images/image-1-mobile@3x.jpg);
     background-size: cover;
     background-position: center center;
     min-height: 80vh;
@@ -45,7 +45,7 @@ header .wrapper {
     font-family: 'Cormorant Garamond';
     text-transform: uppercase;
     line-height: 65px;
-    font-size: 7.11rem;
+    font-size: 6.5rem;
     font-style: italic;
     font-weight: 600;
     color: #fff;
@@ -63,7 +63,7 @@ header .wrapper {
 
 /*MAIN STYLES START HERE*/
 
-/**/
+/*GALLERY STYLES START HERE*/
 
 section .wrapper {
     text-align: center;
@@ -88,7 +88,77 @@ h2 {
     width: 100%;
 }
 
+/*HIGHLIGHT SECTION START HERE*/
 
+.highlight-item {
+    width: calc (100% - 80px);
+    margin: 0 40px;
+}
+
+.highlight-photo {
+    width: 100%;
+}
+
+.title-article {
+    font-family: 'Cormorant Garamond';
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    width: calc(100% - 30px);
+    margin: 15px;
+    padding: 10px 40px;
+}
+
+.text-article {
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: #1f2022;
+    font-size: 1.1rem;
+    line-height: 1.61em;
+    margin: 0 20px;
+}
+
+.wrapper .read-more {
+    text-align: center;
+}
+
+.btn-default {
+    width: 184px;
+    height: 69px;
+    border-radius: 0px;
+    background-color:rgba(24, 51, 153, 0.78);
+    border: none;
+    margin: 5% 25%;
+
+    font-family: 'Cormorant Garamond';
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: #fff;
+    line-height: 1.61em;
+}
+
+/* SECTION STYLES START HERE*/
+
+.section-photo {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+section .btn-default {
+    width: 160px;
+    height: 50px;
+}
+
+section .title-article {
+    font-size: 1.4rem;
+    apdding: 10px;
+}
+
+section .text-article {
+    margin: 0 30px;
+}
 
 
 
