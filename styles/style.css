@@ -36,7 +36,7 @@ ul {
 
 /*The header is 80vh because I want the user to see there's more content below*/
 header {
-    background-image: url(../images/image-1-mobile@3x.jpg);
+    background-image: url(../images/bgMobile.jpg);
     background-size: cover;
     background-position: center center;
     min-height: 80vh;
@@ -46,16 +46,28 @@ header .wrapper {
     padding: 1px 0;
 }
 
-.desktop-only{
+.desktopOnly{
     display: none;
 }
 
-.hamburguer-menu {
+/* .hamburguer-menu {
     float: right;
     margin: 20px;
+} */
+
+header nav::after {
+    content: url(../images/hamburgerMenu.svg);
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 23px;
 }
 
-.main-title{
+header .wrapper {
+    position: relative;
+}
+
+.mainTitle{
     clear: both;
     font-family: 'Cormorant Garamond';
     text-transform: uppercase;
@@ -65,15 +77,15 @@ header .wrapper {
     font-weight: 600;
     color: #fff;
     text-align: center;
-    margin: 0 5% auto;
-    margin-top: calc(57vh - 6.5rem - 4.375rem); /*50vh - font-sizes*/
+    margin-top: calc(55vh - 6.5rem - 4.375rem);
 
 }
 
-.subtitle-magazine {
+.subtitleMagazine {
+    display: block;
     font-size: 4.375rem;
     font-weight: 500;
-    font-style: initial;
+    font-style: normal;
 }
 
 /*MAIN STYLES START HERE*/
@@ -93,28 +105,28 @@ h2 {
     font-weight: 600;
 }
 
-.gallery-item {
+.galleryItem {
     width: calc((100% - 60px) / 2);
     float: left;
     margin: 15px ;
 }
 
-.news-photo {
+.newsPhoto {
     width: 100%;
 }
 
 /*HIGHLIGHT SECTION START HERE*/
 
-.highlight-item {
+.highlightItem {
     width: calc (100% - 80px);
     margin: 0 40px;
 }
 
-.highlight-photo {
+.highlightPhoto {
     width: 100%;
 }
 
-.title-article {
+.titleArticle {
     font-family: 'Cormorant Garamond';
     font-size: 2rem;
     text-transform: uppercase;
@@ -125,7 +137,7 @@ h2 {
     padding: 10px 40px;
 }
 
-.text-article {
+.textArticle {
     font-family: 'Roboto';
     font-weight: 300;
     color: #1f2022;
@@ -134,11 +146,11 @@ h2 {
     margin: 0 5%;
 }
 
-.wrapper .read-more {
+.wrapper .readMore {
     text-align: center;
 }
 
-.btn-default {
+.btnDefault {
     width: 184px;
     height: 69px;
     border-radius: 0px;
@@ -155,24 +167,31 @@ h2 {
 
 /* SECTION STYLES START HERE*/
 
-.section-photo {
+section .sectionPhoto {
     width: 100%;
     max-width: 400px;
     margin: 20px auto;
 }
 
-section .btn-default {
+section .sectionPhoto img {
+    width: 100%;
+}
+
+section .btnDefault {
     width: 160px;
     height: 50px;
 }
 
-section .title-article {
+section .titleArticle {
     font-size: 1.4rem;
     padding: 0;
-    margin: 15px auto;
 }
 
-section .text-article {
+section .titleArticle .breakLine {
+    display: block;
+}
+
+section .textArticle {
     margin: 0 5%;
 }
 
@@ -185,8 +204,8 @@ footer {
     display: inline-block;
 }
 
-footer .user-interaction {
-    background-image: url(../images/image-5@3x.jpg);
+footer .userInteraction {
+    background-image: url(../images/footerBGMobile.jpg);
     background-size: cover;
     background-position: center center;
     min-height: 55vh;
@@ -195,10 +214,9 @@ footer .user-interaction {
 
 }
 
-footer .user-interaction ul {
+footer .userInteraction ul {
     padding: 0;
     display: inline-block;
-    margin: 0 auto;
     margin-top: calc(20vh - 6rem);
 }
 
@@ -206,7 +224,7 @@ footer i {
     font-size: 3rem;
 }
 
-footer .user-interaction ul li p {
+footer .userInteraction ul li p {
     font-family: 'Cormorant Garamond';
     text-transform: uppercase;
     font-size: 1.7rem;
@@ -238,7 +256,7 @@ footer .contact p {
     color: #050505;
 }
 
-footer .contact #field-email {
+footer .contact #fieldEmail {
     width: 360px;
     height: 50px;
     border: none;
@@ -247,10 +265,10 @@ footer .contact #field-email {
 
     font-family: 'Lato';
     font-size: 1.1rem;
-    color: #232323; /* Why the color lokks lighter? */
+    color: #232323; /* Why the color looks lighter? */
 }
 
-footer .contact #btn-email {
+footer .contact #btnEmail {
     width: 360px;
     height: 50px;
     background-color: #070606;
@@ -268,8 +286,7 @@ footer .info .address,
 footer .info ul {
     float: left;
     width: calc((100% - 20%) / 2);
-    margin: 5%;
-    display: inline-block;
+    margin: 4%;
 }
 
 footer .info .address {
@@ -279,7 +296,7 @@ footer .info .address {
 
 footer .info ul {
     text-align: right;
-    width: 30%;
+    width: 32%;
 }
 
 footer .info .address h3 {
@@ -297,7 +314,7 @@ footer .info ul {
     text-transform: uppercase;
 }
 
-footer .copy-bar {
+footer .copyBar {
     clear: both;
     background-color: #acacac;
     width: 100%;
@@ -305,9 +322,20 @@ footer .copy-bar {
     padding: 1px;
 }
 
-footer .copy-bar p {
+footer .copyBar p {
     font-family: 'Roboto';
     text-align: center;
     font-size: 0.9rem;
     color: #000;
+}
+
+/* MEDIA QUERY FOR DESKTOP; MIN-HEIGHT ACCORDING TO W3SCHOOLS*/
+
+@media (min-width: 992px) {
+
+
+
+
+
+
 }
