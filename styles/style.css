@@ -58,7 +58,7 @@ header .wrapper {
     font-weight: 600;
     color: #fff;
     text-align: center;
-    margin: 0 auto;
+    /*/margin: 0 auto;/*/
     margin-top: calc(50vh - 7.11rem - 4.375rem); /*50vh - font-sizes*/
 
 }
@@ -173,6 +173,11 @@ section .text-article {
 
 /*UL SHOP BRANDS, COMMUNITY AND EVENTS SECTION*/
 
+footer {
+    width: 100%;
+    display: inline-block;
+}
+
 footer .user-interaction {
     background-image: url(../images/image-5@3x.jpg);
     background-size: cover;
@@ -203,5 +208,99 @@ footer .user-interaction ul li p {
     margin-top: 10%;
 }
 
+/* CONTACT STYLES START HERE*/
 
+footer .contact {
+    clear: both;
+    background-color: #e3e3e3;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
 
+footer .contact h3 {
+    font-family: 'Cormorant Garamond';
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+footer .contact p {
+    font-family: 'Roboto';
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: #050505;
+}
+
+footer .contact #field-email {
+    width: 360px;
+    height: 50px;
+    border: none;
+    border-radius: 0px;
+    text-align: center;
+
+    font-family: 'Lato';
+    font-size: 1.1rem;
+    color: #232323; /* Why the color lokks lighter? */
+}
+
+footer .contact #btn-email {
+    width: 360px;
+    height: 50px;
+    background-color: #070606;
+    border: none;
+    margin: 10px 0;
+
+    font-family: 'Catamaran';
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+footer .info .address,
+footer .info ul {
+    float: left;
+    width: calc((100% - 20%) / 2);
+    margin: 5%;
+    display: inline-block;
+}
+
+footer .info .address {
+    text-align: left;
+    width: 50%;
+}
+
+footer .info ul {
+    text-align: right;
+    width: 30%;
+}
+
+footer .info .address h3 {
+    margin-top: 0;
+}
+
+footer .info .address p {
+    font-family: 'Roboto';
+    font-size: 0.9rem;
+    line-height: 1em;
+}
+
+footer .info ul {
+    font-family: 'Catamaran';
+    text-transform: uppercase;
+}
+
+footer .copy-bar {
+    clear: both;
+    background-color: #acacac;
+    width: 100%;
+    height: 43px;
+    padding: 1px;
+}
+
+footer .copy-bar p {
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 0.9rem;
+    color: #000;
+}
