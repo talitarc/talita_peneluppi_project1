@@ -44,6 +44,7 @@ header {
 
 header .wrapper {
     padding: 1px 0;
+    position: relative;
 }
 
 .desktopOnly{
@@ -55,16 +56,12 @@ header .wrapper {
     margin: 20px;
 } */
 
-header nav::after {
+header nav .menuHamburguer::after {
     content: url(../images/hamburgerMenu.svg);
     display: block;
     position: absolute;
     top: 40px;
     right: 23px;
-}
-
-header .wrapper {
-    position: relative;
 }
 
 .mainTitle{
@@ -77,7 +74,7 @@ header .wrapper {
     font-weight: 600;
     color: #fff;
     text-align: center;
-    margin-top: calc(55vh - 6.5rem - 4.375rem);
+    margin-top: calc(52vh - 6.5rem - 4.375rem);
 
 }
 
@@ -333,9 +330,105 @@ footer .copyBar p {
 
 @media (min-width: 992px) {
 
+    /* HEADER STYLES DESKTOP */
+    header {
+        background-image: url(../images/bgDesktop.jpg);
+    }
 
+    header nav .menuHamburguer::after {
+        display: none;
+    }
 
+    header .wrapper {
+        padding: 1px;
+        width: 100%;
+        border: 2px solid magenta;
+    }
 
+    header nav .desktopOnly {
+        display: block;
+        clear: both;    
+    }
 
+    header nav, 
+    header nav ul li a {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    header nav a {
+        text-decoration: none;
+    }
+
+    header .navName{
+        float: left;
+        width: 30%;
+        border: 2px solid tomato;
+    }
+
+    header .navName h1 {
+        font-family: 'Cormorant Garamond';
+        font-size: 3rem;
+        font-style: italic;
+    }
+
+    header .navMenu {
+        float: right;
+        width: 50%;
+        border: 2px solid greenyellow;
+        padding: 0;
+        margin: 0;
+    }
+        
+
+    header nav ul li {
+        float: left;
+        margin: 10px 30px;
+
+        font-family: 'Catamaran';
+        color: #fcfcfc;
+        font-size: 1.2rem;
+    }
+
+    header .mainTitle {
+        font-size: 14.5rem;
+        line-height: 140px;
+        margin-top: calc(44vh - 14.5rem - 9.5rem);
+    }
+
+    header .subtitleMagazine {
+        font-size: 9.5rem;
+    }
+
+    /* GALLERY DESKTOP STYLES*/
+
+    main .desktopOnly {
+        display: initial;
+    }
+
+    main .galleryItem {
+        width: calc((100% - 90px) / 3);
+    }
+
+    /* HIGHLIGHT DESKTOP STYLES */
+
+    main .wrapper {
+        border: 2px solid tomato;
+        width: 100%;
+    }
+
+    main .highlightItem {
+        width: calc(35% - 80px);
+        margin: 10px;
+        float: left;
+    }
+
+    main .mainArticle {
+        width: calc(100% - (35% - 80px));
+        margin: 10px;
+        text-align: left;
+        float: left;
+    }
 
 }
