@@ -341,13 +341,11 @@ footer .copyBar p {
 
     header .wrapper {
         padding: 1px;
-        width: 100%;
-        border: 2px solid magenta;
+        width: 80%;
     }
 
-    header nav .desktopOnly {
-        display: block;
-        clear: both;    
+    header .desktopOnly {
+        display: inline-block;   
     }
 
     header nav, 
@@ -363,28 +361,28 @@ footer .copyBar p {
 
     header .navName{
         float: left;
-        width: 30%;
-        border: 2px solid tomato;
+        width: 25%;
     }
 
     header .navName h1 {
         font-family: 'Cormorant Garamond';
         font-size: 3rem;
         font-style: italic;
+        margin-top: 20px;
     }
 
     header .navMenu {
-        float: right;
-        width: 50%;
-        border: 2px solid greenyellow;
+        float: left;
+        width: calc(75% - 100px);
         padding: 0;
-        margin: 0;
+        margin-left: 100px;
+        margin-top: 20px;
+        text-align: end;
     }
-        
 
     header nav ul li {
-        float: left;
-        margin: 10px 30px;
+        display: inline-block;
+        margin: 10px 24px;
 
         font-family: 'Catamaran';
         color: #fcfcfc;
@@ -394,11 +392,33 @@ footer .copyBar p {
     header .mainTitle {
         font-size: 14.5rem;
         line-height: 140px;
-        margin-top: calc(44vh - 14.5rem - 9.5rem);
+        margin-top: calc(52vh - 14.5rem - 9.5rem);
     }
 
     header .subtitleMagazine {
         font-size: 9.5rem;
+    }
+
+    header .wrapper {
+        position: relative;
+    }
+
+    header .navSocial {
+        position: absolute;
+        bottom: 220px;
+        right: 50px;
+    }
+
+    header .navSocial {
+        line-height: 3rem;
+        text-align: center;
+
+    }
+
+    header ul i {
+        color: #fff;
+        font-size: 2rem;
+        line-height: 1.5em;
     }
 
     /* GALLERY DESKTOP STYLES*/
@@ -415,7 +435,21 @@ footer .copyBar p {
 
     main .wrapper {
         border: 2px solid tomato;
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    main .titleArticle,
+    main .textArticle,
+    main .btnDefault {
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+
+    main .titleArticle,
+    main .textArticle,
+    main  .wrapper .readMore  {
+        text-align: left;
     }
 
     main .highlightItem {
@@ -425,10 +459,9 @@ footer .copyBar p {
     }
 
     main .mainArticle {
-        width: calc(100% - (35% - 80px));
-        margin: 10px;
-        text-align: left;
+        width: calc(85% - (35% - 122px));
         float: left;
+        margin-left: 42px;
     }
 
 }
