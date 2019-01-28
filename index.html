@@ -73,16 +73,19 @@
     </main>
 
     <section>
-        <div>
+        <div class="clearfix">
             <div class="sectionPhoto">
                 <img src="images/newTrends.jpg" alt="Model with a black collar fur.">
             </div>
             
-            <div class="wrapper">
+            <div class="wrapper post2">
                 <h3 class="titleArticle">New trends to lookout for</h3>
                 <p class="textArticle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt
                 sem, a blandit sem. Quisque interdum orci.</p>
-                <input class="btnDefault" type="button" value="Read More">
+                <div class="readMore btnSection">
+                    <input class="btnDefault" type="button" value="Read More">
+                </div>
+                
             </div>
         </div>
         
@@ -90,24 +93,27 @@
     </section>
 
     <section>
-        <div class="sectionPhoto">
-            <img src="images/fashionWeek.jpg" alt="Two models in black and white outfits from the last Spring/Summer Fashion Week.">
-        </div>
-        
+        <div class="clearfix">
+            <div class="sectionPhoto photoPost3">
+                <img src="images/fashionWeek.jpg" alt="Two models in black          and white outfits from the last Spring/Summer Fashion           Week.">
+            </div>
 
-        <div class="wrapper">
-            <div>
-                <h3 class="titleArticle">Behind the scenes from spring/<span class="breakLine">summer fashion week</span></h3>
+
+            <div class="wrapper post3">
+                <h3 class="titleArticle">Behind the scenes from spring/<span class="breakLine">summerfashion            week</span></h3>
                 <p class="textArticle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus.Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
-                <input class="btnDefault" type="button" value="Read More">
+                <div class="readMore btnSection">
+                    <input class="btnDefault" type="button" value="Read More">
+                </div>
             </div>
         </div>
         
+        
     </section>
 
-    <footer class="clearfix">
+    <footer>
         <div class="userInteraction">
-            <ul>
+            <ul class="clearfix">
                 <li>
                     <i class="fas fa-calendar-check"></i>
                     <p>Events</p>
@@ -127,8 +133,8 @@
             
         </div>
         <div class="contact">
-            <div class="wrapper">
-                <div>
+            <div class="wrapper clearfix">
+                <div class="newsletter">
                     <h3>Stay updated</h3>
                     <p>Subscribe to our newsletter to stay updated.</p>
                     <input id="fieldEmail" type="email" name="email" placeholder="email address">

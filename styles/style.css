@@ -434,7 +434,6 @@ footer .copyBar p {
     /* HIGHLIGHT DESKTOP STYLES */
 
     main .wrapper {
-        border: 2px solid tomato;
         width: 80%;
         margin: 0 auto;
     }
@@ -442,26 +441,131 @@ footer .copyBar p {
     main .titleArticle,
     main .textArticle,
     main .btnDefault {
-        margin: 10px 0;
-        padding: 10px 0;
+        margin: 0;
+        padding: 0;
     }
 
     main .titleArticle,
     main .textArticle,
-    main  .wrapper .readMore  {
+    main .wrapper .readMore  {
         text-align: left;
     }
 
     main .highlightItem {
-        width: calc(35% - 80px);
-        margin: 10px;
+        width: calc(30% - 30px);
+        margin: 30px 15px;
         float: left;
     }
 
     main .mainArticle {
-        width: calc(85% - (35% - 122px));
+        width: calc(70% - 20px);
         float: left;
-        margin-left: 42px;
+        margin: 20px 0 20px 20px;
     }
 
+    .textArticle {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin: 20px 0;
+    }
+
+    .btnDefault {
+        width: 160px;
+        height: 50px;
+    }
+
+    /* SECTION DESKTOP STYLES */
+
+    /* section .wrapper {
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+        max-height: none;
+    } */
+
+    section .sectionPhoto,
+    section .post2 {
+        float: right;
+    }
+
+    section .sectionPhoto {
+        width: 50%;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    section img {
+        width: 100%;
+    }
+
+    section .post2,
+    section .post3 {
+        width: 39%;
+    }
+
+    section .titleArticle,
+    section .textArticle,
+    section .wrapper .btnSection {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    section .post3 .breakline {
+        display: inline;
+    }
+
+    section .photoPost3,
+    section .post3 {
+        float: left;
+    }
+
+    section .post3 {
+        margin-left: 20px;
+    }
+
+    /* FOOTER DESKTOP*/
+    footer .userInteraction {
+        background-image: url(../images/footerBGdesktop.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        min-height: 30vh;;
+        max-height: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    footer .userInteraction li {
+        float: right;
+        margin: 0 100px;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    footer .userInteraction li:nth-child(2) {
+        margin: 0 25px;
+    }
+
+    /* footer .wrapper {
+        max-width: 90%;
+    } */
+    
+    .newsletter, .info {
+        float: left;
+        /* width: 50%; */
+    }
+
+    .newsletter {
+        width: 60%;
+        text-align: left;
+    }
+
+    .info {
+        width: 40%;
+    }
+
+    footer .contact #btnemail {
+        width: 180px;
+    }
+ 
 }
