@@ -233,7 +233,6 @@ footer .userInteraction ul li p {
 /* CONTACT STYLES START HERE*/
 
 footer .contact {
-    clear: both;
     background-color: #e3e3e3;
     float: left;
     text-align: center;
@@ -294,6 +293,7 @@ footer .info .address {
 footer .info ul {
     text-align: right;
     width: 32%;
+    padding: 1px;
 }
 
 footer .info .address h3 {
@@ -330,6 +330,10 @@ footer .copyBar p {
 
 @media (min-width: 992px) {
 
+    .wrapper {
+        max-width: 90%;
+        margin: 0 auto;
+    }
     /* HEADER STYLES DESKTOP */
     header {
         background-image: url(../images/bgDesktop.jpg);
@@ -497,6 +501,8 @@ footer .copyBar p {
 
     section img {
         width: 100%;
+        height: 300px;
+        object-fit: cover;
     }
 
     section .post2,
@@ -508,6 +514,11 @@ footer .copyBar p {
     section .textArticle,
     section .wrapper .btnSection {
         text-align: left;
+        margin-left: 0;
+    }
+
+    section .readMore .btnDefault {
+        margin-bottom: 10px;
         margin-left: 0;
     }
 
@@ -531,20 +542,28 @@ footer .copyBar p {
         background-repeat: no-repeat;
         min-height: 30vh;;
         max-height: 100%;
-        width: 100%;
         margin: 0 auto;
+    }
+
+    footer .userInteraction ul {
+        max-width: 100%;
+        display: inline;
     }
 
     footer .userInteraction li {
         float: right;
-        margin: 0 100px;
         line-height: 2rem;
-        text-align: center;
+        width: 33%;
+        margin-top: 100px;
     }
 
-    footer .userInteraction li:nth-child(2) {
-        margin: 0 25px;
+    footer .userInteraction ul li p {
+        margin-top: 0px;
     }
+
+    /* footer .userInteraction li:nth-child(2) {
+        margin: 0 25px;
+    } */
 
     /* footer .wrapper {
         max-width: 90%;
@@ -556,16 +575,51 @@ footer .copyBar p {
     }
 
     .newsletter {
-        width: 60%;
+        width: 62%;
         text-align: left;
     }
 
+    .newsletter h3 {
+        margin-top: 16px;
+    }
+
+    .contact {
+        padding: 5% 0;
+    }
+
     .info {
-        width: 40%;
+        width: 38%;
     }
 
     footer .contact #btnemail {
         width: 180px;
     }
- 
+
+    footer .info .address {
+        width: 60%;
+    }
+
+    footer .info ul {
+        width: 24%;
+    }
+
+    footer input[="email"] {
+        display: block;
+    }
+
+    footer input[type="email"],
+    footer input[type="submit"] {
+        float: left;
+    }
+    
+    footer .contact #btnEmail {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1600px) {
+    section img {
+        max-height: initial;
+        object-fit: unset;
+    }
 }
