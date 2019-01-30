@@ -31,6 +31,10 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* HEADER STYLES START HERE */
 
 
@@ -50,11 +54,6 @@ header .wrapper {
 .desktopOnly{
     display: none;
 }
-
-/* .hamburguer-menu {
-    float: right;
-    margin: 20px;
-} */
 
 header nav .menuHamburguer::after {
     content: url(../images/hamburgerMenu.svg);
@@ -261,7 +260,7 @@ footer .contact #fieldEmail {
 
     font-family: 'Lato';
     font-size: 1.1rem;
-    color: #232323; /* Why the color looks lighter? */
+    color: #232323;
 }
 
 footer .contact #btnEmail {
@@ -309,6 +308,10 @@ footer .info .address p {
 footer .info ul {
     font-family: 'Catamaran';
     text-transform: uppercase;
+}
+
+footer .info ul li a {
+    color: #000;
 }
 
 footer .copyBar {
@@ -409,8 +412,8 @@ footer .copyBar p {
 
     header .navSocial {
         position: absolute;
-        bottom: 220px;
-        right: 50px;
+        bottom: 20%;
+        right: 2%;
     }
 
     header .navSocial {
@@ -480,13 +483,6 @@ footer .copyBar p {
 
     /* SECTION DESKTOP STYLES */
 
-    /* section .wrapper {
-        width: 80%;
-        margin: 0 auto;
-        padding: 10px;
-        max-height: none;
-    } */
-
     section .sectionPhoto,
     section .post2 {
         float: right;
@@ -497,12 +493,6 @@ footer .copyBar p {
         max-width: 100%;
         display: block;
         margin: 0 auto;
-    }
-
-    section img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
     }
 
     section .post2,
@@ -540,13 +530,13 @@ footer .copyBar p {
         background-image: url(../images/footerBGdesktop.jpg);
         background-position: center center;
         background-repeat: no-repeat;
-        min-height: 30vh;;
+        background-size: cover;
+        min-height: 25vh;;
         max-height: 100%;
         margin: 0 auto;
     }
 
     footer .userInteraction ul {
-        max-width: 100%;
         display: inline;
     }
 
@@ -554,24 +544,15 @@ footer .copyBar p {
         float: right;
         line-height: 2rem;
         width: 33%;
-        margin-top: 100px;
+        margin-top: 7%;
     }
 
     footer .userInteraction ul li p {
         margin-top: 0px;
     }
-
-    /* footer .userInteraction li:nth-child(2) {
-        margin: 0 25px;
-    } */
-
-    /* footer .wrapper {
-        max-width: 90%;
-    } */
     
     .newsletter, .info {
         float: left;
-        /* width: 50%; */
     }
 
     .newsletter {
@@ -618,8 +599,41 @@ footer .copyBar p {
 }
 
 @media (min-width: 1600px) {
-    section img {
-        max-height: initial;
-        object-fit: unset;
+
+    main .mainArticle {
+        margin-top: 32px;
+    }
+
+    main .textArticle,
+    section .textArticle {
+        font-size: 1.2rem;
+        margin: 20px 0;
+    }
+
+    section .titleArticle {
+        font-size: 1.8rem;
+    }
+
+    section .post2,
+    section .post3 {
+        margin-top: 30px;
+    }
+
+    section .post 3 {
+        margin-left: 10px;
+    }
+
+    footer .userInteraction li {
+        margin-top: 5%;
+    }
+
+    .newsletter {
+        margin-left: 10%;
+        width: 50%;
+    }
+
+    .contact {
+        margin-right: 10%;
+        width: 30%;
     }
 }
